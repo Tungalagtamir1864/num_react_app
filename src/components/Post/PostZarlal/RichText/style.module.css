@@ -1,0 +1,16 @@
+.Rich{
+    font-family: sans-serif;
+    text-align: center;
+}
+.autorInput{
+    border: 1px black;
+}
+.ContactData{
+    font-size: 18px;
+    display: grid;
+}
+.ContactData div input{
+    width: 350px;
+    height: 25px;
+    border-style: ridge;
+}

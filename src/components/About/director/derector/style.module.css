@@ -1,0 +1,31 @@
+h2 {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: start;
+  }
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: start;
+    color: #004dda;
+    letter-spacing: -0.032em;
+    font-weight: 100;
+  }
+  .title2{
+    text-align: start;
+  }
+  .container{
+    margin-top: 15px;
+    text-align: justify;
+  }
+  .img{
+    display: flex;
+    float: left;
+    width: 400px;
+    margin-right: 2rem;
+    
+    margin-bottom: 2rem;
+  }
+  .dire{
+    color: rgb(34, 34, 34);
+  }

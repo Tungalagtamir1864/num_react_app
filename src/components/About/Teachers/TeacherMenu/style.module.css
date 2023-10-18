@@ -1,0 +1,201 @@
+
+.accordion {
+	width: 300px;
+  justify-content: start;
+}
+.accordion input {
+	display: none;
+}
+.box {
+	position: relative;
+	background: white;
+    height: 64px;
+    transition: all .15s ease-in-out;
+	padding-top: 18px;
+}
+.box::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+}
+header.box {
+	background: #1444c0;
+	z-index: 100;
+	cursor: initial;
+	box-shadow: 0 -1px 0 #e5e5e5,0 0 2px -2px rgba(0,0,0,.12),0 2px 4px -4px rgba(0,0,0,.24);
+}
+header .box_title {
+	margin: 5px;
+	font-weight: bold;
+	font-size: 19px;
+	color: white;
+	cursor: initial;
+	justify-content: center;
+}
+.box .box_title{
+  font-size: 16px;
+  justify-content: center;
+  
+}
+.box_title {
+	width: calc(100% - 40px);
+	height: 64px;
+	-webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.box_content {
+	width: calc(100% - 40px);
+	
+	color: rgba(0,0,0,.54);
+	display: none;
+}
+.box_close {
+	position: absolute;
+	height: 64px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	display: none;
+}
+input:checked + .box {
+	height: auto;
+	margin: 16px 0;
+    box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
+}
+input:checked + .box .box_title {
+	border-bottom: 1px solid rgba(0,0,0,.18);
+}
+input:checked + .box .box_content,
+input:checked + .box .box_close {
+	display: inline-block;
+}
+.arrows section .box_title {
+	width: calc(100% - 64px);
+}
+.arrows section .box_title:before {
+	position: absolute;
+	display: block;
+	content: '\203a';
+	
+	left: 20px;
+	top: 15px;
+	transition: transform .15s ease-in-out;
+	color: rgba(0,0,0,.54);
+}
+input:checked + section.box .box_title:before {
+	transform: rotate(90deg);
+  
+}
+.teach {
+	display: grid;
+	width: 80%;
+	margin-left: 4rem;
+	margin-right: 4rem;
+	align-items: center;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 4rem;
+	font-family: "SFProDisplay";
+	justify-items: center;
+	align-items: center;
+  }
+  
+  .teacher {
+	background-color: rgb(255, 255, 255);
+	width: 300px;
+	height: 250px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+	border-radius: 5px;
+	padding: 15px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Сүүдэрийн үнэн цэгүүдийг тодорхойлох */
+  }
+  .head .headItem h1 {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 28px;
+	color: #0053ad;
+  }
+  .head .headItem p {
+	margin-top: 12px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #4d4d4d;
+  }
+  .head {	
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  }
+  .headItem img {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+  }
+  .teacherContainer {
+	padding-top: 10px;
+  }
+  .item {
+	padding-right: 15px;
+	margin: 5px;
+	color: rgb(97, 97, 97);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	left: 5px;
+	text-align: start; /* Энд "start" гэж тодорхойлно. */
+  }
+  .mail:before {
+	content: "✉";
+  }
+  .mail2:before {
+	content: "✉";
+  }
+  .call:before {
+	content: "☎";
+  }
+  .loc:before {
+	content: "⟟";
+  }
+  @media only screen and (max-width: 1072px) {
+	.teach {
+		grid-template-columns: repeat(2, 1fr); /* 732px хүртэл жижигрэх */
+		height: auto;
+		width: auto;
+	}
+  }
+  @media only screen and (max-width: 732px) {
+	.teach {
+		grid-template-columns: repeat(1, 1fr); /* 732px хүртэл жижигрэх */
+		height: auto;
+		width: auto;
+	}
+	.con{
+		display: grid;
+		align-items: center;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 4rem;
+		font-family: "SFProDisplay";
+		align-items: center;
+	}
+  }
+  
+.con{
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 4rem;
+	font-family: "SFProDisplay";
+	align-items: center;
+}

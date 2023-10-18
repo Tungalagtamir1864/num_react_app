@@ -1,0 +1,47 @@
+/* Apply styles to elements with class 'table' */
+.header{
+    font-weight: 700;
+    color: #272727; 
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+
+    
+}
+.table {
+    font-family:'Times New Roman';
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+/* Apply styles to elements with class 'body' */
+.body {
+    background-color: white;
+}
+
+/* Apply styles to elements with class 'head' */
+.table .head {
+    font-size: 18px;
+    background-color: rgb(212, 212, 212);
+}
+
+/* Apply styles to 'th' and 'td' elements */
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Apply styles to 'th' elements within an element with class 'bagana' */
+.bagana th {
+    font-weight: 100;
+    font-size: 16px;
+}
+.bagana{
+    font-size: 16px;
+    text-align: justify;
+}
+

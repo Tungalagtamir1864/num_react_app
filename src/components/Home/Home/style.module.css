@@ -1,0 +1,79 @@
+.home {
+  padding: 0;
+}
+
+.home .slide1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 60rem;
+  background-size: cover !important;
+  background-position: center !important;
+  animation: fadeIn 3s; /* 3 секундын анимаци */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.content{
+  background-color: #1000002c;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  position: absolute;
+}
+
+.home .slide1 .content h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+justify-content: center;
+  color: rgb(202, 201, 201);
+/*border white with light shadow*/
+text-shadow:
+2px 0 0 #000,
+-2px 0 0 #000,
+0 2px 0 #000,
+0 -2px 0 #000,
+1px 1px 0 #000,
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 5px #000;
+}
+ 
+
+.date1{
+  text-align: center;
+  font-size: medium;
+
+  text-shadow:
+2px 0 0 #000,
+-2px 0 0 #000,
+0 2px 0 #000,
+0 -2px 0 #000,
+1px 1px 0 #000,
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 5px #000;
+}
+.home .slide1 .content p {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #777;
+  color: #eee; 
+  align-items: center;
+}
+
+.swiper-pagination-bullet-active {
+  background: #0eb582;
+}

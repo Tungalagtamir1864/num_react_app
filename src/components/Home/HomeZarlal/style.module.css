@@ -1,0 +1,70 @@
+
+.zar{
+  margin-top: 5rem;
+}
+.container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  font-family: "SFProDisplay";
+  justify-items: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: flex-end; /* Align children to the bottom */
+  position: relative; /* Required for absolute positioning */
+  width: 350px;
+  justify-content: center;
+  box-shadow: 0px 20px 50px #d9dbdf;
+}
+.title2 {
+  font-size: 32px;
+  line-height: 40px;
+  text-align: start;
+}
+.title {
+  font-size: 32px;
+  line-height: 40px;
+  text-align: start;
+  color: #004dda;
+  letter-spacing: -0.032em;
+  font-weight: 100;
+}
+
+.before{
+  height: 50px;
+  font-size: 18px;
+  color: white;
+  justify-content: center;
+  
+  padding-top: 10px;
+  background-color:rgb(66, 66, 255);
+}
+.before::before{
+  content: "🗓️"
+}
+.after{
+  background-color: white;
+  height: 150px;
+  font-size: large;
+  padding-top: 25px;
+}
+@media only screen and (max-width: 1072px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* 732px хүртэл жижигрэх */
+    height: auto;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 732px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr); /* 732px хүртэл жижигрэх */
+    height: auto;
+    width: auto;
+  }
+}

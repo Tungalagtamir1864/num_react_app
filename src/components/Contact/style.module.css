@@ -1,0 +1,23 @@
+.conContainer{
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Contactform{
+  background-color: rgb(255, 255, 255);
+  border: 1px black;
+  border-radius: 5px;
+  
+}
+.Contactform div {
+}
+.Contactform div label{
+  margin-left: 5px;
+  font-size: 18px;
+  border: 1px rgb(92, 91, 90);
+}
+.well h3{
+  font-size: 18px;
+  text-align: start;
+}
